@@ -11,9 +11,6 @@ app.config['SQLALCHEMY_ECHO'] = True
 db = SQLAlchemy(app)
 app.secret_key = 'key'
 
-
-#db.create_all()
-
 class Blog(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
